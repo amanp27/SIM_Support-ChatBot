@@ -1,33 +1,13 @@
-# Simple Invoice Manager (SIM) — RAG-Optimized Knowledge Base
+# Company / Business Setup
 
-> This knowledge base is structured for retrieval-augmented generation (RAG). Each section begins with a [Topic] label for accurate chunk retrieval. Tables are converted to bullet points. FAQs are included at the end of each section.
-
----
-
-## Table of Contents
-
-1. [Company / Business Setup](#1-company--business-setup)
-2. [Clients & Suppliers](#2-clients--suppliers)
-3. [Products & Services](#3-products--services)
-4. [Invoices](#4-invoices)
-5. [Estimates / Proforma Invoices](#5-estimates--proforma-invoices)
-6. [Sale Orders](#6-sale-orders)
-7. [Expense Management](#7-expense-management)
-
----
-
-[Topic: Company Business Setup]
-
-# 1. Company / Business Setup
-
-### Definition
+## Definition
 A feature that lets you set up and manage your business details either during first-time onboarding or later from the app settings (Primary Settings, Invoice Header & Footer).
 
-### When & Who
+## When & Who
 - Filled by the business owner during initial app setup (onboarding) and updated anytime later from settings whenever business information changes.
 
-### Flows / Navigation:
-#### A. Flow for Onboarding: 
+## Flows / Navigation:
+### A. Flow for Onboarding: 
 
 1. Install the App you can see Onboarding Screen.
 2. Upload your **company logo** and **owner signature** (can be added manually).
@@ -36,11 +16,11 @@ A feature that lets you set up and manage your business details either during fi
 5. Tap **Save / Update**. Wait a moment for the database to update.
 6. Note:- [If you want access this information inside the app]
 
-    1. Go to Settings >> Primary Setting (Transaction No., Tax Identification Type, Country, Financial Year, Currency Format, Bumber Format, Date Format)
+    1. Go to Settings >> Primary Setting (Transaction No., Tax Identification Type, Country, Financial Year, Currency Format, Number Format, Date Format)
 
     2. Go to Settings >> Invoice Header/Footer (Logo, Company Name, Address, Phone Number, Email Address, Website, Head Note/Foot Note, Signature and Paid Stamp)
 
-### Key Fields
+## Key Fields
 
 - **Business / Company Name** — The legal or trade name of the business. Printed on all documents.
 - **Country** — Sets regional defaults including currency symbol, tax label, and date format.
@@ -52,16 +32,16 @@ A feature that lets you set up and manage your business details either during fi
 - **Owner Signature** — Can be drawn manually in the app or uploaded as an image. Appears at the bottom of invoices.
 - **Paid Stamp** — When enabled, displays a clear PAID mark on documents to indicate completed payment.
 
-### Alternate Terms
+## Alternate Terms
 
 - Company / Business Setup is also called: Company Profile, Business Profile, Organization Setup
 - Financial Year is also called: Fiscal Year, Accounting Year, Tax Year
 - Owner Signature is also called: Authorized Signature, Signatory
 
-### Video Tutorial
+## Video Tutorial
 How to Add Company or Business: https://www.youtube.com/watch?v=H8D5DLmF58o
 
-### FAQs
+## FAQs
 
 **Q: How to add company details like company name, tax, logo, and signature?**
 A: Go to Settings → Invoice Header & Footer. Add business name, address, contact number, email, logo, and owner signature. For country, currency, financial year, and date format, go to Settings → Primary Settings. These details appear on every invoice and document the app generates.
@@ -80,11 +60,9 @@ A: Yes. Go to Settings → Primary Settings or Settings → Invoice Header & Foo
 
 ---
 
-[Topic: Clients Suppliers]
+# Clients & Suppliers
 
-# 2. Clients & Suppliers
-
-### Definition
+## Definition
 All business contacts are managed in one place. 
 
 * **Clients** – businesses that receive invoices for sales. 
@@ -92,26 +70,26 @@ All business contacts are managed in one place.
 
 Once a contact is added, it can be selected instantly while creating invoices or purchases, without entering details again. 
 
-### When & Who
+## When & Who
 This feature is useful for businesses that regularly deal with the same clients or suppliers. 
 
 * Contacts can be added in advance, or 
 * Created instantly while making an invoice or purchase. 
 
-### Flows / Navigation
+## Flows / Navigation
 Side Menu (☰) → Client / Supplier → Add Client or Add Supplier
 
-### Important Notes-
+## Important Notes-
 - The user cannot add any custom fields other than the fields that are already present in creation form.
 
-### Key Fields
+## Key Fields
 
 - **Opening Balance** — The outstanding amount that existed between the business and the party before they started using SIM.
   - To Receive: The client owes the business money.
   - To Give: The business owes the client money.
 - **GST Number (GSTIN) / Tax ID** — The party's tax identification number. Required for GST-compliant invoicing in India.
 
-### Optional Sub-Features
+## Optional Sub-Features
 
 **Transaction History**
 - It shows the sales and payment that were recorded in a table format. 
@@ -138,17 +116,17 @@ Gives a complete summary of a party's activity including:
 **Export to Excel**
 - The client or supplier list can be downloaded using the Export Excel option.
 
-### Alternate Terms
+## Alternate Terms
 
 - Client is also called: Customer, Buyer, Party, Consumer, Account
 - Supplier is also called: Vendor, Seller, Creditor, Distributor, Wholesaler
 - Client/Supplier List is also called: Party Master, Contact Book, Ledger, Account Directory
 - Opening Balance is also called: Carried Forward Balance, Prior Balance, Outstanding Balance
 
-### Video Tutorial
+## Video Tutorial
 How to Add Client & Supplier: https://www.youtube.com/watch?v=hTjFjCd4FKM
 
-### FAQs
+## FAQs
 
 **Q: How to add a new client in SIM?**
 A: Tap the hamburger menu (☰) → Client / Supplier → Add Client → fill in the details → Save.
@@ -179,21 +157,19 @@ A: You can check the client statement by following these steps: Go to Reports �
 
 ---
 
-[Topic: Products Services]
+# Products & Services
 
-## 3. Products & Services
-
-### Definition
+## Definition
 The Products & Services section helps you manage all the goods and services your business offers. You can save each item’s key details—like name, description, price, and tax—and reuse them in invoices to make billing faster and more consistent. 
 
-### When & Who
+## When & Who
 - All business types: physical goods sellers, service providers, SaaS, consultants.
 - Set up before creating the first invoice, or products can be added directly while creating an invoice.
 
-### Flow / Navigation:
+## Flow / Navigation:
 Dashboard → Side Menu (☰) → Products → Show Product List → Add New Product → Tap Add New Product → Fill required fields (Name, Price, Category, etc.) → Enable or disable inventory tracking as needed → Save.
 
-### Key Fields
+## Key Fields
 
 - **Sale Rate** — Price at which the item is sold to clients.
 - **Purchase Rate** — Price at which the item is bought from suppliers. Used for profit calculation.
@@ -202,7 +178,8 @@ Dashboard → Side Menu (☰) → Products → Show Product List → Add New Pro
 - **Opening Stock Rate** — The cost price (buy rate) per unit at the time of initial stock entry.
 - **Minimum Alert Level** — Stock threshold that triggers a low-stock warning for reordering.
 - **HSN Code** — A number that identifies a product.
-### Optional Features
+
+## Optional Features
 
 **Product Categorization**
 - Groups products into categories (e.g., Electronics, Services, Raw Materials).
@@ -231,14 +208,14 @@ Dashboard → Side Menu (☰) → Products → Show Product List → Add New Pro
 - Not visible by default. Enable from Settings → Enable / Disable Features → Reorder Management → Enable Reorder Feature
 *(Search: "Reorder Management" in Settings search bar)*
 
-### Important Notes
+## Important Notes
 
 - A product cannot be created with the same spelling as a deleted product. The app performs a soft delete — deleted products remain in the system because they may be linked to existing invoices.
 - To add a product with a similar name, make a minor change in spelling or add a character (e.g., a comma or dot).
 - It is not possible to delete or reset only a specific section of data. Data can only be fully reset or not at all.
 - The user cannot add any custom fields other than the fields that are already present in creation form.
 
-### Alternate Terms
+## Alternate Terms
 
 - Product is also called: Item, Good, Article, SKU, Stock Item, Commodity
 - Service is also called: Work, Task, Job, Offering, Service Item
@@ -248,12 +225,12 @@ Dashboard → Side Menu (☰) → Products → Show Product List → Add New Pro
 - Product Catalogue is also called: Item Master, Price List, Inventory List, Product Database
 - Measurement Unit is also called: Unit of Measure (UOM), Unit
 
-### Video Tutorials
+## Video Tutorials
 - How to Add Product or Service: https://www.youtube.com/watch?v=EmURS_9WiG4
 - Batch Upload Multiple Products: https://www.youtube.com/watch?v=-zSq_ioaw8A
 - Setup Product Categorization: https://www.youtube.com/watch?v=Lyt9zfVnRHM
 
-### FAQs
+## FAQs
 
 **Q: How to add a product or service in SIM?**
 A: Go to Side Menu → Products → Product List → Add New Product. Fill in name, rate, tax, and other details. Enable inventory if tracking stock. Tap Save.
@@ -293,21 +270,19 @@ A: When enabled, products on invoices and documents are grouped under their assi
 
 ---
 
-[Topic: Invoices]
+# Invoices
 
-## 4. Invoices
-
-### Definition
+## Definition
 An invoice is a formal, legally binding document issued by a seller to a buyer, requesting payment for goods delivered or services rendered. It details what was sold, the quantities, prices, applicable taxes, and the total amount due. In India, a GST-registered business must issue a **tax invoice** for all taxable supplies.
 
-### When & Who
+## When & Who
 - Used by any business that sells goods or services: freelancers, retailers, wholesalers, service providers.
 - Raised after a sale is made or a service is delivered.
 
-### Navigation
+## Navigation
 Dashboard → Side Menu (☰) → Invoice → Add New Invoice
 
-### Actions After Invoice Creation
+## Actions After Invoice Creation
 
 After creating an invoice, you can perform various actions by clicking on the invoice from invoice list. These actions include:
 
@@ -323,7 +298,7 @@ After creating an invoice, you can perform various actions by clicking on the in
 *   **Delete**: Permanently remove the invoice.
 *   **Cancel Invoice**: Invalidate the invoice.
 
-### Key Fields
+## Key Fields
 
 - **Due Date** — The deadline by which the client must make payment.
 - **Discount** — A reduction applied to the price. Can be a flat amount (e.g., ₹200 off) or a percentage (e.g., 10% off). Applied per item or on the total invoice.
@@ -331,13 +306,13 @@ After creating an invoice, you can perform various actions by clicking on the in
 - **Shipping Charges** — Additional charges for delivery or freight. Added as a separate line item.
 - **Custom Fields** — User-defined labels and values visible at the top of the invoice (e.g., PO Number, Vehicle Number, LR Number).
 
-### Invoice Statuses
+## Invoice Statuses
 
 - **Not Received** — Payment has not been collected yet.
 - **Partially Received** — Some payment has been collected; a balance remains.
 - **Fully Received / Paid** — The complete invoice amount has been collected.
 
-### Optional Features
+## Optional Features
 
 **Recurring Invoice**
 - You can set new invoices to repeat automatically weekly or monthly.
@@ -396,7 +371,8 @@ When creating an invoice in POS mode, the customer can be marked as:
 **Banking Details**
 - Bank account information added to the invoice so the client knows how to make a payment.
 
-### E-Invoice:
+## E-Invoice:
+
 **E-Invoice (India)**
 - The E-Invoice setting enables the app to generate government-registered B2B invoices with an IRN (Invoice Reference Number) and QR code, as required by India's GST portal (IRP). 
 - This is a mandatory compliance feature for GST-registered businesses with annual turnover exceeding ₹5 crore.
@@ -444,7 +420,7 @@ Settings → Enable / Disable Features → e-Invoice Settings → Accept disclai
 - ZATCA refers to the Zakat, Tax and Customs Authority — the government body in Saudi Arabia and UAE responsible for taxes and e-invoicing.
 - SIM supports adding a ZATCA-compliant QR code to invoices. The QR code contains seller name, VAT number, date, total, and VAT amount in a secure encoded format for verification.
 
-### Alternate Terms
+## Alternate Terms
 
 - Invoice is also called: Bill, Tax Invoice, Sales Invoice, Commercial Invoice, Tax Bill, Sales Bill, Sales Receipt, Sale Record
 - Due Date is also called: Payment Deadline, Payment Due Date
@@ -453,10 +429,11 @@ Settings → Enable / Disable Features → e-Invoice Settings → Accept disclai
 - Terms & Conditions is also called: Payment Terms, T&C, Conditions of Sale
 - Shipping Charges is also called: Freight, Delivery Charges, Logistics Cost
 
-### Video Tutorial
+## Video Tutorial
+
 How to Create an Invoice: https://www.youtube.com/watch?v=SurVRuMIkUg
 
-### FAQs
+## FAQs
 
 **Q: How to create an invoice in SIM?**
 A: From the dashboard, Side Menu (☰) → Invoices → Add New Invoice → select client → add items → apply tax and discount if needed → add payment if received → Preview → Save or Send.
@@ -498,55 +475,53 @@ A: Go to Settings → Enable / Disable Features → e-Way Bill Settings → acce
 A: EBN stands for E-Way Bill Number. It is the unique number assigned to each generated E-Way Bill. It must accompany goods during transport.
 
 **Q: How to add a client’s signature to any form (Invoice, Estimate, Sale Order, etc.)**
-
 A: You can add a client’s signature to documents like invoices, estimates, sale orders, purchase orders, purchase records, and receipts by following these steps: Go to the list of the specific form (Invoice / Estimate / Sale Order / Purchase Order / Purchase Record / Receipt) → Select the document you want to edit → Edit → Scroll down to the Signature / Head Note / Foot Note → '+' Add → Upload/Add → Save.
 
 Currently, the feature to add a client’s signature is only available on the mobile app (Android).
 
 ---
 
-[Topic: Estimates Proforma Invoices]
+# Estimates / Proforma Invoices
 
-## 5. Estimates / Proforma Invoices
-
-### Definition
+## Definition
 An estimate is a non-binding price proposal sent to a potential client before work begins or an order is confirmed. It shows what the client will likely be charged, but it has no legal payment obligation and cannot be used for tax claims. It is used to get client approval on pricing before a final invoice is raised.
 
 An estimate in SIM serves the purpose of a Proforma Invoice — issued before delivery to request advance payment or for customs documentation.
 
-### When & Who
+## When & Who
 - Used by freelancers, contractors, agencies, service providers, and any business that quotes prices before delivery.
 - Sent when a client asks for a price before confirming an order.
 
-### Flows / Navigation:
+## Flows / Navigation:
 Dashboard → Estimate section → Create Estimate → Add the necessary details.
 
-### Key Fields
+## Key Fields
 
 - **Estimate Date** — The date the quote is prepared. Used to track the age and validity of the quote.
 - **Banking Details** — The business's bank account information added to the estimate so the client knows how to pay.
 - **Pay Now Button (PayPal)** — An embedded direct payment link added to the estimate for online payment. For international users.
 - **UPI QR Code** — A scannable QR code linked to the business's UPI ID for instant digital payment. For Indian users.
 
-### Key Concept: Estimate vs. Invoice
+## Key Concept: Estimate vs. Invoice
 
 - Estimate — A quote. Tentative. No legal obligation. A client can reject it.
 - Invoice — A bill. Legally binding. Payment is expected once issued.
 
-### Optional Feature: Add Image to Estimate
+## Optional Feature: Add Image to Estimate
+
 - An image can be added to an estimate record.
 - The user can choose to show or hide it in the PDF — useful for client-facing documents vs. internal references.
 
-### Alternate Terms
+## Alternate Terms
 
 - Estimate is also called: Quote, Quotation, Price Quote, Proforma Invoice, Proposal, Price Offer
 - Banking Details is also called: Bank Account Details, Payment Information, Beneficiary Details
 - UPI QR Code is also called: Payment QR, Scan-to-Pay Code
 
-### Video Tutorial
+## Video Tutorial
 How to Create an Estimate / Proforma Invoice: https://www.youtube.com/watch?v=J7f9U3ozE4M
 
-### FAQs
+## FAQs
 
 **Q: What is an estimate in SIM?**
 A: An estimate is a non-binding price proposal sent to a client before work begins. It shows likely charges but has no legal payment obligation. Once the client agrees, it can be converted into a final invoice.
@@ -565,46 +540,44 @@ A: A proforma invoice looks like a real invoice but is issued before delivery of
 
 ---
 
-[Topic: Sale Orders]
+# Sale Orders
 
-## 6. Sale Orders
-
-### Definition
+## Definition
 A sale order is created when a customer confirms they want to buy from you, but you haven’t delivered the goods or raised the final invoice yet. It serves as an internal record that reserves stock and initiates the fulfillment process.
 
-### When & Who
+## When & Who
 - Used by wholesalers, distributors, manufacturers, and B2B businesses where orders are placed in advance and fulfilled later.
 - Common when a customer sends a formal Purchase Order that the business needs to acknowledge.
 
-### Flows / Navigation:
+## Flows / Navigation:
 Dashboard → Side Menu (☰) → Sale Order section → Add Sale Order (Add details.)
 
-### Sale Order Statuses
+## Sale Order Statuses
 
 - **Pending** — Order accepted but goods not yet delivered or invoiced.
 - **Completed** — Invoice has been raised and payment received.
 - **Manually Completed** — Sale order force-closed manually even if not fully fulfilled.
 - **Cancelled** — Sale order completely cancelled and will not be processed.
 
-### Key Concept: Sale Order vs. Invoice
+## Key Concept: Sale Order vs. Invoice
 
 - Sale Order — A commitment to sell. Records the customer's confirmed intent to purchase. Does not affect inventory or accounts.
 - Invoice — The formal bill generated after delivery, requesting payment. Affects accounts and inventory.
 
-### Reference Number on Invoice
+## Reference Number on Invoice
 - When an invoice is created from a sale order, the invoice is automatically assigned the corresponding sale order reference number.
 - This allows easy tracking and searching of invoices linked to a specific sale order.
 - Two sale orders from the same customer can be combined into a single invoice.
 
-### Alternate Terms
+## Alternate Terms
 
 - Sale Order is also called: Sales Order, SO, Customer Order, Work Order, Booking
 - Pending is also called: Open, Unfulfilled, In Progress
 
-### Video Tutorial
+## Video Tutorial
 How to Create a Sale Order: https://www.youtube.com/watch?v=swWyOktSWvg
 
-### FAQs
+## FAQs
 
 **Q: What is a sale order in SIM?**
 A: A sale order records a customer's confirmed intent to purchase before delivery happens and before an invoice is raised. It tracks the order status and initiates the fulfillment process.
@@ -621,15 +594,14 @@ A: Manually Completed means the sale order was force-closed by the user even if 
 **Q: Can two sale orders be merged into one invoice?**
 A: Yes. Two sale orders from the same customer can be combined to create a single invoice record.
 
+---
 
-[Topic: Expense Management]
+# Expense Management
 
-## 7. Expense Management
-
-### Definition
+## Definition
 Expense Management is a feature used to record, organize, and track all business spending. Every expense entered is stored and automatically reflected in financial reports — especially the Profit & Loss (P&L) report, where expenses are deducted from income to calculate net profit or loss.
 
-### When & Who
+## When & Who
 
 When it is used:
 - Paying rent, utilities, or subscriptions
@@ -644,22 +616,21 @@ Who uses it:
 - Freelancers — to track business-related spending
 - Finance teams / SMEs — for budgeting, audits, and analysis
 
-### Key Components
+## Key Components
 
 - **Expense Entry Form** — Records date, expense type, description, and amount for each expense.
 - **Expense List / Report** — A consolidated view of all recorded expenses. Accessible from Reports → Other → Expense Report.
 - **Expense Type (Category)** — Organizes spending into categories such as Rent, Travel, Utilities, or Supplies.
 - **Integration with P&L** — All recorded expenses automatically reflect in Profit & Loss reports and reduce net profit accordingly.
 
-### Alternate Terms
+## Alternate Terms
 
 - Expense Management is also called: Expense Tracking, Expense Management System, Cost Tracking, Spending Tracker, Expense Ledger
 
----
-### Important Notes
+## Important Notes
 - The user cannot add any custom fields other than the fields that are already present in creation form.
 
-### FAQs
+## FAQs
 
 **Q: What is Expense Management in SIM?**
 A: Expense Management is a feature to record and track all business spending. Every expense entered automatically reflects in financial reports, especially the Profit & Loss report.
