@@ -2506,3 +2506,19 @@ A: The time depends on the volume of data. It may take some time to complete for
 A: Yes. Thorough Syncing is designed to prevent data duplication and data loss by performing intelligent conflict resolution and a full data alignment between local and cloud storage.
 
 ---
+
+# Purchase Return
+A purchase return is created when goods purchased from a supplier are returned. The original purchase invoice is never deleted — it records that the purchase happened. A purchase return is created instead, which connects to the original purchase invoice, records what was returned, keeps the purchase record accurate, removes returned items from inventory, and adjusts the supplier balance accordingly.
+
+## When and Who
+- A purchase return is created when purchased goods need to be returned to the supplier, such as when items are damaged, defective, incorrect, expired, or excess quantity was received.
+
+- A purchase return is usually created by the business that purchased the goods, typically through the purchasing department, store manager, warehouse staff, or accounts team.
+
+## FAQs
+
+**Q: Why should I not delete the original purchase invoice when goods are returned to the supplier?**
+A: Deleting a purchase invoice misrepresents financial and inventory history. The original purchase happened and must remain in the records. A purchase return offsets the original purchase invoice without erasing it — this is standard accounting practice.
+
+**Q: How to create Purchase Return?**
+A: Dashboard >> Purchase Record >> Click on the Purchase >> Make Purchase Return >> Select the products that you want to return >> save
