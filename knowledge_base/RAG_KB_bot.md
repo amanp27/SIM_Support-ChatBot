@@ -1,4 +1,4 @@
-# Simple Invoice Manager (SIM) — RAG-Optimized Knowledge Base
+# Simple Invoice Manager (SIM) — In App Features Documentation
 # Company / Business Setup
 
 ## Definition
