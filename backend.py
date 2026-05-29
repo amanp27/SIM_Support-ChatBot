@@ -2,6 +2,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage, BaseMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import StateGraph, START, END
+from langgraph.checkpoint.memory import InMemorySaver
 from typing import TypedDict, List, Annotated
 from langgraph.graph.message import add_messages
 
@@ -31,5 +32,6 @@ graph.add_node('chat_node', chat_node)
 graph.add_edge(START, 'chat_node')
 graph.add_edge('chat_node', END)
 
+checkpointer = InMemorySaver()
 
-chatbot = graph.compile()
+chatbot = graph.compile(checkpointer=checkpointer)

@@ -2520,3 +2520,108 @@ A: Deleting a purchase invoice misrepresents financial and inventory history. Th
 
 **Q: How to create Purchase Return?**
 A: Dashboard >> Purchase Record >> Click on the Purchase >> Make Purchase Return >> Select the products that you want to return >> save
+
+---
+
+# Multiple Price List
+
+## Definition
+Multiple Price List is a feature that allows businesses to create and manage different price tiers for different customer segments — such as retail buyers, wholesale buyers, or dealers. Each customer category can be assigned its own set of product prices, including custom rate When an invoice is created for a client, the app automatically applies the price set for that client's category — no manual adjustment needed per transaction.
+
+When creating an invoice, select the appropriate client category to automatically display product prices based on that category.
+
+This feature must be enabled before use. It is disabled by default.
+
+## When & Who
+
+When it is used:
+- When different pricing structures are needed for different customer groups (e.g., wholesale vs. retail).
+
+Who uses it:
+- Wholesalers and distributors — to manage wholesale vs. retail price separation.
+- Retailers and dealers — to offer category-wise pricing to different buyer groups.
+
+## Navigation Path
+
+To enable: Settings → Multiple Price List → Done
+If prompted, tap Enable to activate the client category option.
+
+Alternative activation: Side Menu → Product Options → Price List by Product or Price List by Customer Category → Enable from here.
+
+## Key Components
+
+### A. Client Categories
+Before assigning price lists, clients must be grouped into categories.
+
+Navigation: Settings → Client / Supplier Categorization → Create new client category → Assign clients to the category from Client Entry Form.
+
+### B. Price List by Product
+Assign custom prices per category for a specific product.
+
+- Side Menu → Product Options → Price List by Product
+- Select a product
+- Set Buy Rate and Sale Rate for the item
+- All available client categories appear at the bottom
+- Enter the custom price for each category manually
+
+### C. Price List by Customer Category
+Assign custom prices per product for a specific customer category.
+
+- From the Price List by Product screen → tap the Categories icon at the top
+- Select the customer category
+- All products available for that category appear at the bottom
+- Assign individual prices per product, or tap Add Pricing Formula to apply a calculated markup or discount across all products at once (e.g., +10% or −10% on sale rate and buy rate)
+- Pricing Formula is only available in Price List by Customer Category
+
+### D. Automatic Price Application in Invoices
+When creating an invoice:
+- Select a client assigned to a category
+- Add a product to the invoice
+- The app automatically applies the price set for that product under the client's category — no manual selection needed
+
+### E. Reporting
+Navigate to Report → All Reports → Sales → Multiple Price List Report.
+The report can also be accessed through the Price List By Product or Price List By Customer Category section.
+The report displays product prices according to each customer category.
+
+### Key Concepts
+
+**Multiple Price List vs. Standard Pricing:** Standard pricing uses a single sale rate per product for all customers. Multiple Price List allows a different rate per product for each customer category — applied automatically at invoice time based on who the client is.
+
+**Pricing Formula:** Instead of entering custom prices for each product manually, the Pricing Formula applies a flat percentage change (markup or discount) to the sale rate and buy rate across all products in a category at once. For example, applying −10% on sale rate for the Wholesale category reduces all product prices for wholesale clients by 10% automatically.
+
+**Dependency on Client Categorization:** This feature requires Client / Supplier Categorization to be enabled. If a client is not assigned to any category, the app applies the standard default product price on invoices.
+
+## Video Tutorial
+Multiple Price List: https://www.youtube.com/watch?v=OUYfy6Ik_oI
+
+## FAQs
+
+**Q: What is the Multiple Price List feature in SIM?**
+A: Multiple Price List allows businesses to create different price tiers for different customer categories (e.g., retail, wholesale, dealer). When an invoice is created, the app automatically applies the correct price for that client's category.
+
+**Q: How to enable Multiple Price List in SIM?**
+A: Go to Settings → Multiple Price List → Done. If prompted, tap Enable to activate the client category option. It can also be activated from Side Menu → Product Options → Price List by Product or Price List by Customer Category.
+
+**Q: Do I need to set up client categories before using Multiple Price List?**
+A: Yes. The feature requires clients to be grouped into categories first. Go to Settings → Client / Supplier Categorization → create a category → assign clients to it.
+
+**Q: What is the difference between Price List by Product and Price List by Customer Category?**
+A: Price List by Product lets you set prices per category for one specific product at a time. Price List by Customer Category lets you set prices per product for one specific customer category at a time — and supports applying a pricing formula to all products at once.
+
+**Q: What is the Pricing Formula in Multiple Price List?**
+A: Pricing Formula applies a percentage-based markup or discount across all products for a selected customer category at once — for example, −10% on sale rate for wholesale clients. It avoids manually entering a price for each product.
+
+**Q: What happens if a client is not assigned to any category?**
+A: If a client has no assigned category, the app applies the standard default product pricing on their invoices.
+
+**Q: How does the price get applied automatically on an invoice?**
+A: When creating an invoice, select a client who belongs to a category. Add a product. The app automatically displays the price set for that product under the client's category — no manual selection needed.
+
+**Q: Can I apply a discount to all products for a customer category at once?**
+A: Yes. Go to Price List by Customer Category → select the category → tap Add Pricing Formula → enter the percentage (e.g., −10% on sale rate) → apply. This updates prices for all products in that category at once.
+
+**Q Can I get tutorial video for Multiple Price List Feature?**
+A: Multiple Price List: https://www.youtube.com/watch?v=OUYfy6Ik_oI
+
+---
