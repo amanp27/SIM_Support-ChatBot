@@ -11,7 +11,7 @@ import time
 import uuid
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv()   
 
 # Initialize the LLM
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
@@ -35,6 +35,9 @@ conn = sqlite3.connect(database="chatbot.db", check_same_thread=False)
 # --- LangGraph checkpointer (handles LangGraph internal state) ---
 checkpointer = SqliteSaver(conn=conn)
 
+
+# Creates the conversations table in the same chatbot.db if it doesn't already exist. 
+# This is separate from the LangGraph checkpointer tables and is used for clean JSON storage of message pairs.
 # --- Create custom conversations table for clean JSON storage ---
 conn.execute("""
     CREATE TABLE IF NOT EXISTS conversations (
@@ -64,7 +67,9 @@ def _now_ms() -> int:
     """Return current UTC time in milliseconds."""
     return int(time.time() * 1000)
 
-
+# -----------------------------------------------------------------------
+# Conversation storage functions (for clean JSON storage of messages in a seperate table)
+# -----------------------------------------------------------------------
 def save_message_pair(session_id: str, user_message: str, ai_message: str):
     """
     Append a user+AI message pair to the conversations table.
