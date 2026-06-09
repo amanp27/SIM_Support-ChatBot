@@ -52,8 +52,7 @@ flowchart TD
     I --> J[gpt-4o-mini]
     J --> K([Response])
 ```
-
----
+--- 
 
 ## Data Flow — End to End
 
