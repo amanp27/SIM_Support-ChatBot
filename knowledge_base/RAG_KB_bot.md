@@ -1,4 +1,66 @@
 # Simple Invoice Manager (SIM) — In App Features Documentation
+
+## Table of Contents
+
+### General Features
+1. Company / Business Setup
+2. Clients & Suppliers
+3. Products & Services
+4. Invoices
+5. Estimates / Proforma Invoices
+6. Sale Orders
+7. Expense Management
+8. Purchase Orders
+9. Purchase Records
+10. Purchase Return
+11. Inventory Management
+12. Sale Returns, Refunds & Credit Notes
+13. Sub Users & Approvals
+14. GST Compliance — India
+15. Clound Account
+16. Online Store
+17. POS Billing
+18. Reports
+19. Other Income
+20. Switch Users
+21. Receivable & Payable
+22. Delivery Note
+23. Commission
+24. Receipts
+25. Batch Upload
+26. Payment Management
+27. Cash / Bank Fund Transfer
+28. Thorough Syncing
+29. Multiple Price List
+
+### Setting Features
+1. Credit Note
+2. Payment Account
+3. Client / Supplier Categorization
+4. Export Data
+5. Language
+6. Customize Home Screen
+7. Backup & Restore
+8. Printer Settings
+9. Barcode / QR Code Scanner
+10. Invoice Template Settings
+11. Manage Fields in Documents
+12. Manage Images
+13. Banking Details & PayPal.Me
+14. Invoice Header & Footer
+15. Terms & Conditions
+16. Help Videos
+17. Permanently Delete Account
+18. Tax Settings
+19. Primary Settings Guide
+
+### Subscription
+1. App Subscription / Upgrade
+
+---
+
+# General Features
+
 # Company / Business Setup
 
 ## Definition
@@ -800,6 +862,22 @@ A: Open the purchase record from the purchase list → tap Mark as Paid → sele
 
 **Q: What reports are available for purchases?**
 A: You can check Purchase/Payment Report, Detailed Purchase Report, and Purchase Order Report from the Reports section.
+
+---
+
+# Purchase Return
+A purchase return is created when goods purchased from a supplier are returned. The original purchase invoice is never deleted — it records that the purchase happened. A purchase return is created instead, which connects to the original purchase invoice, records what was returned, keeps the purchase record accurate, removes returned items from inventory, and adjusts the supplier balance accordingly.
+
+## When and Who
+- A purchase return is usually created by the business that purchased the goods, typically through the purchasing department, store manager, warehouse staff, or accounts team.
+
+## FAQs
+
+**Q: Why should I not delete the original purchase invoice when goods are returned to the supplier?**
+A: Deleting a purchase invoice misrepresents financial and inventory history. The original purchase happened and must remain in the records. A purchase return offsets the original purchase invoice without erasing it — this is standard accounting practice.
+
+**Q: How to create Purchase Return?**
+A: Dashboard >> Purchase Record >> Click on the Purchase >> Make Purchase Return >> Select the products that you want to return >> save
 
 ---
 
@@ -2507,22 +2585,6 @@ A: Yes. Thorough Syncing is designed to prevent data duplication and data loss b
 
 ---
 
-# Purchase Return
-A purchase return is created when goods purchased from a supplier are returned. The original purchase invoice is never deleted — it records that the purchase happened. A purchase return is created instead, which connects to the original purchase invoice, records what was returned, keeps the purchase record accurate, removes returned items from inventory, and adjusts the supplier balance accordingly.
-
-## When and Who
-- A purchase return is usually created by the business that purchased the goods, typically through the purchasing department, store manager, warehouse staff, or accounts team.
-
-## FAQs
-
-**Q: Why should I not delete the original purchase invoice when goods are returned to the supplier?**
-A: Deleting a purchase invoice misrepresents financial and inventory history. The original purchase happened and must remain in the records. A purchase return offsets the original purchase invoice without erasing it — this is standard accounting practice.
-
-**Q: How to create Purchase Return?**
-A: Dashboard >> Purchase Record >> Click on the Purchase >> Make Purchase Return >> Select the products that you want to return >> save
-
----
-
 # Multiple Price List
 
 ## Definition
@@ -2625,3 +2687,996 @@ A: Yes. Go to Price List by Customer Category → select the category → tap Ad
 A: Multiple Price List: https://www.youtube.com/watch?v=OUYfy6Ik_oI
 
 ---
+
+# Settings Features
+
+# Credit Note
+
+## Definition
+The Credit Note setting controls whether the app can create credit notes. A credit note records the monetary value owed back to a customer after a sale return. Once enabled, every sale return automatically generates a linked credit note. The credit amount can be refunded in cash or bank, or adjusted against a future invoice.
+
+## Sub-Settings
+
+- **Enable Credit Note Feature** — Activates credit note creation. Every sale return will automatically generate a linked credit note when this is on.
+
+## Navigation Path
+
+Settings → Credit Note Settings → Enable
+*(Search: "Credit Note" in Settings search bar)*
+
+## FAQs
+
+**Q: What is the Credit Note setting in SIM?**
+A: The Credit Note setting controls whether the app can create credit notes. When enabled, every sale return automatically generates a credit note that can be refunded or adjusted against a future invoice.
+
+**Q: How to enable Credit Note in SIM?**
+A: Go to Settings → Credit Note Settings → Enable. You can also search "Credit Note" in the Settings search bar.
+
+**Q: Does enabling Credit Note affect existing sale returns?**
+A: No. It affects new sale returns created after enabling. Once enabled, every new sale return automatically generates a linked credit note.
+
+---
+
+# Payment Account
+
+## Definition
+Payment Account enables the ability to create and use multiple payment accounts in the app representing where the business receives or stores money — for example, a Cash counter, Bank account, or UPI wallet. When enabled, every payment recorded in the app can be tagged to a specific account for precise tracking.
+
+By default, when enabled, the app creates two accounts: Cash and Bank. Additional accounts can be added.
+
+Payment Account is required by: Other Income, Cash/Bank Fund Transfer, and detailed payment tracking.
+
+## Navigation Path
+Settings → Payment Account Setting → Enable
+*(Search: "Payment Account" in Settings search bar)*
+
+## FAQs
+
+**Q: What is the Payment Account setting in SIM?**
+A: Payment Account enables the ability to create multiple payment accounts (e.g., Cash, Bank, UPI) and tag each recorded payment to a specific account for precise tracking.
+
+**Q: How to enable Payment Account in SIM?**
+A: Go to Settings → Payment Account Setting → Enable. You can also search "Payment Account" in the Settings search bar.
+
+**Q: What accounts are created by default when Payment Account is enabled?**
+A: Two accounts are created by default: Cash and Bank. Additional accounts can be added manually.
+
+**Q: Is Payment Account required for any other features?**
+A: Yes. Payment Account is required before using Other Income, Cash/Bank Fund Transfer, and other features that involve tracking payment modes.
+
+**Q: How to create a payment account?**
+A: Go to Settings → Payment Account Setting!. Tap Enable if not already enabled. Click Add New Account to create your specific payment account (like UPI, Cash, Bank)!
+Fill in the Account type, name, Opening balance- if applicable,(additionally you hae to mention date for opening balance) You can make this new account as default. then tap Save!
+
+---
+
+# Client / Supplier Categorization
+
+## Definition
+Client / Supplier Categorization controls the ability to group clients and suppliers into user-defined categories (e.g., Retail Customers, Wholesale Buyers, Local Suppliers, Interstate Vendors) for organized management and filtering.
+
+## Navigation Path
+Settings → Client / Supplier Categorization Setting → Enable
+*(Search: "Client Supplier Categorization" in Setting search bar)*
+
+## FAQs
+
+**Q: What is Client / Supplier Categorization?**
+A: It allows grouping clients and suppliers into custom categories such as Retail, Wholesale, or Local Suppliers for organized management and filtering.
+
+**Q: How to enable Client / Supplier Categorization?**
+A: Go to Settings → Client / Supplier Categorization Setting → Enable.
+
+---
+
+# Export Data
+
+## Definition
+Export Data allows the business to extract all app data — invoices, clients, products, payments — into a CSV file for backup, external analysis, or migration to another system.
+
+## When & Who
+Used when creating a data backup, migrating to another system, sharing records externally, or performing detailed analysis outside the app.
+
+## Navigation Path
+Settings → Export Your Data → Tap Export CSV → Select data to export
+*(Search: "Export" in Settings search bar)*
+
+## FAQs
+
+**Q: How to export data from SIM?**
+A: Go to Settings → Export → tap Export CSV → select the data you want to export.
+
+**Q: What data can be exported from SIM?**
+A: Invoices, clients, products, and payments can be exported as a CSV file.
+
+**Q: What is the Export Data feature used for?**
+A: It is used for creating data backups, migrating to another system, sharing records externally, or analyzing data outside the app.
+
+---
+
+# Language
+
+## Definition
+Language controls the display language of the entire app interface. Changing this setting updates all menus, labels, and buttons to the selected language.
+
+## Navigation Path
+Settings → Language → Choose Language
+*(Search: "Language" in Settings search bar)*
+
+## FAQs
+
+**Q: How to change the language in SIM?**
+A: Go to Settings → Language → choose your preferred language.
+
+**Q: What does changing the language affect?**
+A: It updates all menus, labels, and buttons across the entire app interface.
+
+---
+
+# Customize Home Screen
+
+## Definition
+Customize Home Screen allows personalization of the dashboard layout — selecting which tabs, widgets, or sections are visible and how they are arranged. It improves workflow by surfacing the most frequently used features on the home screen.
+
+## Navigation Path
+Settings → Home Screen → Select Layout → Select tabs / widgets to show → Apply
+*(Search: "Home Screen" in Settings search bar)*
+
+## Dashboard Quick Access
+The four-square icon (top-right corner of relevant screens) opens a dropdown with:
+- **Change Layout** — Modify the visual arrangement of the current screen.
+
+## FAQs
+
+**Q: How to customize the home screen layout in SIM?**
+A: Go to Settings → Home Screen → select a layout → choose which tabs and widgets to show → Apply.
+
+**Q: What is the four-square icon on the dashboard?**
+A: The four-square icon (top-right corner) opens a quick-access dropdown to Change Layout or access Enable / Disable Features.
+
+---
+
+# Backup & Restore
+
+## Definition
+Backup & Restore allows saving a complete copy of all app data — invoices, clients, products, payments — to a storage destination and restoring it later if needed. It protects against data loss from device change, app uninstall, or crashes.
+
+## When & Who
+- Before uninstalling the app or switching to a new phone.
+- After an app crash or unexpected data loss.
+- Periodically as a routine data safety measure.
+
+## Navigation Path
+Settings → Backup & Restore → Select Backup or Restore → Choose storage option
+*(Search: "Backup" in Settings search bar)*
+
+## Backup Storage Options
+
+- **Google Drive** — Saves backup directly to linked Google Drive account.
+- **Dropbox** — Saves backup to linked Dropbox account.
+- **Share Backup File** — Shares the backup file via any app (WhatsApp, email, etc.).
+- **Email Backup File** — Sends the backup file directly to an email address.
+- **Backup on Device** — Saves the backup file locally on the device storage.
+
+## Restore Source Options
+
+- **Google Drive** — Restores from a backup saved in Google Drive.
+- **Dropbox** — Restores from a backup saved in Dropbox.
+- **Search on Device** — Browse device storage to locate and restore a backup file.
+- **Restore from Device** — Directly restore from a known location on device storage.
+
+## Optional Sub-Feature: Scheduled Backup Reminder
+
+Enables automatic periodic backup reminders linked to Google Drive or Dropbox.
+
+- Reminder Frequency — Daily, Weekly, or Monthly.
+- Storage Destination — Google Drive or Dropbox.
+
+Navigation: Settings→ Backup & Restore → Schedule Backup Reminder → Link Google Drive / Dropbox → Enable reminder → Select frequency → Save
+
+## Alternate Terms
+Data Backup, Data Recovery, Cloud Backup, Sync & Restore, Export / Import Data, Data Migration
+
+## FAQs
+
+**Q: How to take a backup in SIM?**
+A: Go to Settings → Backup & Restore → tap Backup → choose a storage option (Google Drive, Dropbox, Email, Share, or Device) → proceed.
+
+**Q: How to restore data in SIM?**
+A: Go to Settings → Data and Online Management → Backup & Restore → tap Restore → choose the source (Google Drive, Dropbox, or Device) → select the backup file.
+
+**Q: Can I schedule automatic backups?**
+A: Yes. Go to Settings → Backup & Restore → Schedule Backup Reminder → link Google Drive or Dropbox → enable the reminder → select frequency (Daily, Weekly, or Monthly) → Save.
+
+**Q: What data is included in the backup?**
+A: The backup includes all app data: invoices, clients, products, and payments.
+
+---
+
+# Printer Settings
+
+## Definition
+Printer Settings configures how invoices and receipts are printed. The app supports two printer types — Normal (A4/standard) and Thermal (receipt roll) — each with separate layout and connection settings.
+
+## When & Who
+Used during initial setup, when switching between counter billing (thermal) and office printing (normal), and when printing invoices or receipts.
+
+## Printer Types
+
+- **Thermal Printer** — For fast receipt printing at counters and retail shops. Paper size: 58mm or 80mm roll.
+- **Normal Printer** — For full-page invoice printing in offices or for detailed records. Paper size: A4 or Letter.
+
+## Navigation Path
+Settings → Printer Setting → Select printer type → Configure → Save
+*(Search: "Printer" in Settings search bar)*
+
+## Key Configuration Fields
+
+- **Printer Type** — Thermal or Normal.
+- **Connection Type** — Bluetooth, USB, or Wi-Fi / Network.
+- **Page Width** — 58mm or 80mm for thermal; A4 or Letter for normal.
+- **Number of Copies** — Default number of copies printed per transaction.
+- **Print Preview Toggle** — Show or hide a preview screen before printing.
+
+## Thermal Printer Format Customization
+
+Each section of the thermal receipt can be individually customized:
+
+- **Organization Detail** — Font size (Default / Small / Bold); show or hide: logo, address, contact, email, GSTIN, website.
+- **Client Detail** — Font size; show or hide: client name, contact person, address, contact number, email, GSTIN.
+- **Line Items** — Font size; adjust characters per line to prevent text from cutting off.
+- **Tax & Calculation** — Font size; option to show tax even when prices are inclusive; group taxes by rate.
+- **Additional Info** — Font size; show or hide: banking details, signature.
+- **Custom Field Names** — Rename fields for: Receipt, Estimate, Purchase Record, Purchase Order, Sale Order, Sales Return, Online Store Sale Order, Delivery Note.
+- **Custom Currency Prefix** — Add a custom currency symbol.
+
+## Alternate Terms
+Print Setup, Printing Configuration, Receipt Printer Settings, POS Printer Setup, Output Settings
+
+## FAQs
+
+**Q: How to set up a printer in SIM?**
+A: Go to Settings → Printer Setting → select the printer type (Thermal or Normal) → configure connection type and page size → Save.
+
+**Q: What printer types does SIM support?**
+A: SIM supports Thermal printers (58mm or 80mm roll) for fast receipt printing, and Normal printers (A4 or Letter) for full-page invoice printing.
+
+**Q: How to connect a Bluetooth printer in SIM?**
+A: Go to Settings → Printer Setting → select Thermal Printer → tap Change Printer → select Bluetooth → pair your device → Save.
+
+**Q: Can I customize the thermal receipt layout?**
+A: Yes. Each section of the thermal receipt (organization details, client details, line items, tax, signature, etc.) can be customized for font size, content visibility, and field names.
+
+---
+
+# Barcode / QR Code Scanner
+
+## Definition
+The Barcode / QR Code Scanner setting enables the app to scan product barcodes or QR codes using the device camera or an external Bluetooth scanner. It instantly fetches and adds product details to an invoice without manual entry.
+
+## When & Who
+Used during invoice creation, product entry, inventory setup, and at billing counters for fast checkout.
+
+## Scanner Types
+
+- **Camera Scanner** — Uses the device's built-in camera to scan barcodes and QR codes.
+- **Bluetooth / External Scanner** — A paired physical barcode scanner for faster, hands-free scanning.
+
+## Navigation Path
+Settings → Barcode / QR Code Scanner → Enable → Choose scanner type (Camera / Bluetooth) → Save
+*(Search: "Barcode" in Settings search bar)*
+
+## Key Fields
+
+- **Scanner Type** — Camera or Bluetooth / external scanner.
+- **Auto Scan Mode** — Continuous scanning without needing to tap for each item.
+- **Scan Result Action** — Auto-add item to invoice, or show a confirmation before adding.
+- **Default Quantity on Scan** — Number of units added per scan (default: 1).
+- **Beep / Vibration on Scan** — Audible or tactile feedback on a successful scan.
+
+## Alternate Terms
+Barcode Scanner Setup, QR Scanner Settings, Product Scan Settings, POS Scanner Configuration, Item Scan Setup
+
+## FAQs
+
+**Q: How to enable barcode scanning in SIM?**
+A: Go to Settings → Barcode / QR Code Scanner → Enable → choose scanner type (Camera or Bluetooth) → Save.
+
+**Q: Can I use the phone camera as a barcode scanner?**
+A: Yes. Select Camera as the scanner type. The device camera will be used to scan barcodes and QR codes.
+
+**Q: What is Auto Scan Mode?**
+A: Auto Scan Mode enables continuous scanning without needing to tap for each item. Products are added one after another automatically.
+
+---
+
+# Invoice Template Settings 
+**(Applicable for: Invoice, Purchase Record, Sale Order, Purchase Order, Estimate, Sale Return, Purchase Return, Credit Note, Delivery Note, Recurring Invoice, Online Store, Sale Order)**
+
+## Definition
+Invoice Template Settings controls the visual design and layout of invoice PDFs — including:
+- template style, 
+- fonts, 
+- colors, 
+- column visibility, and what information appears on the document. It changes how invoices look, not the data within them.
+
+## When & Who
+Used during initial setup, when improving invoice appearance or branding, and before printing or sharing invoices with clients.
+
+## Navigation Path
+Settings → Invoice Template Setting → Customize → Preview → Save
+Also accessible from: Invoice / Purchase List → Edit Invoice / Purchase → More → Change Template
+*(Search: "Template" in Settings search bar)*
+
+## Customization Options
+
+**1. Theme Settings**
+- **Templates** — 10 pre-built templates. Select, preview, and apply any.
+- **Overall Sizes** — Changes the font size of the entire invoice uniformly (XS to XXL).
+- **Border** — Adjusts the template border between dark and light.
+- **Header Alignment** — Positions organization details and logo: Left, Centre, or Right. Option to add extra top spacing.
+- **Individual Sizes** — Changes font size and style (Bold, Italic, Underline) for specific sections of the invoice.
+- **Color** — Changes the template's primary color. Custom colors can be defined.
+
+**2. PDF Generation**
+- **Document PDF Page Size** — Sets the paper size for invoice PDFs (e.g., A4, Letter).
+- **Color Reports** — Enables report PDFs to be generated in color.
+- **Report Page Size** — Sets the paper size for report PDFs.
+
+**3. Columns to Show on PDF**
+Show or hide columns: Sr. No., Quantity, Rate, Discount, Tax, Inclusive Tax.
+
+**4. Items to Show on PDF**
+Show or hide sections: Header (business name and address), Total product quantity and amount, Balance and paid amount, Date-wise payment details, Total outstanding balance, Total amount in words, Signature, Attached images on invoice, Attached images on estimate.
+
+## Alternate Terms
+Invoice Theme Settings, Invoice Design / Layout, Bill Format Customization, Print Template Settings, Document Design, Invoice Style Configuration
+
+## FAQs
+
+**Q: How to change the invoice template in SIM?**
+A: Go to Settings → Invoice Template Setting → select a template → preview → Apply. You can also change the template from Invoice List → Edit Invoice → More → Change Template.
+
+**Q: How to change the font size of an invoice PDF?**
+A: Go to Settings → Invoice Template Setting → Invoice Theme → Overall Sizes (for uniform change) or Individual Sizes (for specific sections) → adjust → Done → Save.
+
+**Q: How to change the invoice color to match my brand?**
+A: Go to Settings  → Invoice Template Setting → Invoice Theme → Color → select a color or define a custom one → Apply.
+
+**Q: How to hide certain columns from the invoice PDF?**
+A: Go to Settings → Invoice Template Setting → disable the columns you do not want to appear.
+
+**Q: How to show the outstanding balance on the invoice?**
+A: Go to Settings → Invoice Template Setting → enable Total Outstanding Balance.
+
+**Q: I want to change template for purchase record**
+A: Settings → Invoice Template Setting → Customize → Preview → Save
+Also accessible from: Purchase Record → Edit Record → More → Change Template
+
+---
+
+# Manage Fields in Documents
+
+## Definition
+Manage Fields in Documents is a customization feature that allows renaming existing field labels on documents and creating new custom fields — at the document level or the line-item level — to tailor invoices and other documents to specific business needs.
+
+## When & Who
+Used when standard field names do not match industry terminology, or when additional data fields are needed on documents.
+
+## Navigation Path
+Settings → Manage Fields in Documents
+*(Search: "Manage Fields" in Settings search bar)*
+
+## Options
+
+**1. Rename Fields**
+Change the display label of any existing field on invoices and estimates.
+- The default field name appears on the left.
+- The custom replacement name is entered on the right.
+- Changes apply across all PDFs and printouts.
+
+**2. Create New Fields for Documents**
+Add custom fields to the entire document (not per line item).
+- Examples: Project Name, Delivery Date, LR Number, Vehicle Number.
+- Maximum: 5 custom document fields.
+
+**3. Create New Fields for List Items**
+Add custom columns to each product or service line in the document.
+- Examples: HSN Code, Serial Number, Batch Number.
+- Maximum: 5 custom item-level fields.
+
+## Where Changes Apply
+Applies to: Invoice, Purchase Record, Estimate, Sale Order, Purchase Order. Visible in all PDF templates.
+
+## Alternate Terms
+Field Customization, Custom Field Management, Edit Labels, Add Custom Fields, Line Item Columns, Personalize Invoice
+
+## FAQs
+
+**Q: How to rename field names on invoices in SIM?**
+A: Go to Settings → Manage Fields in Documents → Rename Fields → enter the custom name in the right-side field → Save. Changes apply across all PDFs and printouts.
+
+**Q: How to add custom fields to an invoice?**
+A: Go to Settings → Manage Fields in Documents → Create New Fields for Documents → enter a field name → Add. Maximum 5 custom document fields are allowed.
+
+**Q: How to add custom columns to each invoice line item?**
+A: Go to Settings → Manage Fields in Documents → Create New Fields for List Items → enter the column name → Add. Maximum 5 item-level fields are allowed.
+
+**Q: Do field changes apply to all document types?**
+A: Yes. Changes apply to Invoice, Purchase Record, Estimate, Sale Order, and Purchase Order, and are visible in all PDF templates.
+
+---
+
+# Manage Images
+
+## Definition
+Manage Images is a centralized image management panel that provides a unified view of all uploaded images and signatures stored in the app — including files linked to invoices, estimates, POS products, and approval signatures. It also shows current server storage usage and allows deletion of unused files.
+
+## When & Who
+Used to review, organize, or delete uploaded media, and to free up server storage space.
+
+## Dependencies
+Images uploaded through these modules appear here: Invoice, Purchase, Estimate, Sale Order, Purchase Order, POS, and Product Form.
+
+## Navigation Path
+Settings → Manage Images
+*(Search: "Manage Images" in Settings search bar)*
+
+## Alternate Terms
+Image Manager, Media Library, File Manager, Asset Manager, Media Hub, Uploads Manager
+
+## FAQs
+
+**Q: What is Manage Images in SIM?**
+A: Manage Images is a centralized panel showing all uploaded images and signatures from invoices, estimates, POS, and products. It also displays server storage usage and allows deletion of unused files.
+
+**Q: How to access Manage Images?**
+A: Go to Settings → Manage Images.
+
+**Q: Which modules contribute images to the Manage Images section?**
+A: Invoice, Purchase, Estimate, Sale Order, Purchase Order, POS, and Product Form.
+
+---
+
+# Banking Details & PayPal.Me
+
+## Definition
+Banking Details & PayPal.Me allows configuring and displaying payment collection details directly on invoices and estimates so clients know how to pay. It supports traditional bank transfer details, UPI QR codes (India), and PayPal.Me payment links (international users).
+
+## When & Who
+Configured once during setup or updated as needed. Applies to sale invoices and estimates sent to clients.
+
+## Navigation Path
+Settings → Banking Details and PayPal.Me → Add details → Save
+*(Search: "Banking Details" in Settings search bar)*
+
+## Where It Appears
+- Estimates
+- Unpaid Sale Invoices
+
+## Key Fields
+
+- **Display Banking Details in Estimate** — Toggle to show or hide banking information on estimates.
+- **Payable To** — The name of the individual or business the payment should be made to (beneficiary name).
+- **Banking Details** — Bank name, account number, IFSC code, SWIFT code, or any transfer details. Free-form text field.
+- **Other Details** — Supplementary payment instructions or notes.
+
+## Optional Payment Features
+
+- **UPI Payment QR Code** — For Indian users only. Displays a scannable QR code linked to the UPI ID. Clients scan and pay via Google Pay, PhonePe, Paytm, etc.
+- **Pay Now Button (PayPal.Me)** — For international users. Embeds a clickable Pay Now button linked to the PayPal.Me URL for instant online payment.
+
+## Alternate Terms
+
+- Banking Details is also called: Bank Transfer Information, Account Details, Payment Instructions, Wire Transfer Details
+- PayPal.Me is also called: Digital Payment Link, Instant Payment Link, Personal Payment Page
+- UPI QR Code is also called: QR Code for Digital Payments, Indian Payment QR, Scan-to-Pay Code
+- Payable To is also called: Beneficiary Name, Recipient Name
+
+## FAQs
+
+**Q: How to add bank account details to invoices in SIM?**
+A: Go to Settings → Banking Details and PayPal.Me → enter Payable To and Banking Details → Save. These details appear on unpaid sale invoices and estimates.
+
+**Q: How to add a UPI QR code to invoices?**
+A: Go to Settings → Banking Details and PayPal.Me → enable the UPI Payment QR Code option → enter UPI ID → Save. This is available for Indian users only.
+
+**Q: How to add a PayPal Pay Now button to invoices?**
+A: Go to Settings → Banking Details and PayPal.Me → enable Add Pay Now Button using PayPal.Me → enter PayPal.Me link → Save. This is available for international users.
+
+**Q: Where do banking details appear on documents?**
+A: Banking details appear on unpaid sale invoices and estimates.
+
+---
+
+# Invoice Header & Footer
+
+## Definition
+Invoice Header & Footer allows customization of the top (header) and bottom (footer) sections of all invoices and documents. The header carries business identity information. The footer provides authorization, notes, and branding. Once configured, the header and footer appear automatically on all generated invoices, estimates, and other documents.
+
+## Navigation Path
+Settings → Invoice Header & Footer
+*(Search: "Invoice Header" in Settings search bar)*
+
+## Invoice Header Fields
+
+- **Upload Logo** — Company logo displayed at the top of every document.
+- **Company Name** — The official business name.
+- **Address, Address Line 2, City, State, Pin Code** — Full business address for identification and compliance.
+- **Phone Number** — Business contact number.
+- **Email Address** — Business contact email.
+- **Website** — Business website URL.
+- **GSTIN / Tax ID** — GST Identification Number or equivalent tax ID. Required for GST-compliant invoices in India.
+
+## Invoice Footer Fields
+
+- **Add Signature** — Upload a signature image or draw manually. Appears as the authorized signatory.
+- **Person Name** — Name of the person whose signature is being used or who is authorizing the document.
+
+## Optional Features
+
+- **Default Head Note** — A customizable text note that appears in the header section of all invoices automatically.
+- **Default Foot Note** — A customizable text note that appears in the footer section of all invoices automatically.
+- **Paid Stamp** — When enabled, a PAID mark is automatically displayed on fully paid invoices as visual confirmation of settlement.
+
+## Alternate Terms
+
+- Invoice Header is also called: Business Letterhead, Company Information Section, Document Masthead
+- Invoice Footer is also called: Document Footnote, Legal Disclaimers, Payment Terms Section, Closing Remarks
+- GSTIN is also called: Tax ID, VAT Number, Business Registration Number
+- Signature is also called: Authorized Signatory, Digital Signature
+- Paid Stamp is also called: Payment Confirmation Mark, Settlement Indicator
+
+## FAQs
+
+**Q: How to add company logo and details to invoices?**
+A: Go to Settings → Invoice Header & Footer → upload logo → fill in company name, address, contact, email, website, and GSTIN → Save.
+
+**Q: How to add a signature to invoices?**
+A: Go to Settings → Invoice Header & Footer → scroll to the footer section → tap Add Signature → upload an image or draw manually → Save.
+
+**Q: What is the Paid Stamp feature?**
+A: When enabled, a PAID mark automatically appears on fully paid invoices as a visual confirmation of payment. Enable it from Settings → Invoice Header & Footer.
+
+**Q: What is the Head Note and Foot Note?**
+A: Default Head Note is a customizable text that appears in the header of all invoices. Default Foot Note appears in the footer. Both are enabled from Settings → Invoice Header & Footer.
+
+---
+
+# Terms & Conditions
+
+## Definition
+Terms & Conditions allows adding predefined legal or informational text to invoices, estimates, and delivery notes. It communicates payment rules, return policies, disclaimers, and other business terms consistently across all documents.
+
+## When & Who
+Used while creating invoices, estimates, or delivery notes. Used by business owners, freelancers, and billing staff to standardize business policies.
+
+## Navigation Path
+Settings → Terms & Conditions → Add new → Enter text → Optionally set as default → Save
+While creating an invoice: default terms apply automatically, or a specific entry can be selected manually.
+*(Search: "Terms" in Settings search bar)*
+
+## Key Fields
+
+- **Terms Text** — The main content: payment terms, warranty details, return policy, disclaimers, etc.
+- **Set as Default** — Automatically applies this entry to all new documents without manual selection.
+- **Edit (✏️)** — Modify an existing terms entry.
+- **Delete (🗑️)** — Remove an unwanted terms entry.
+- **Make Default** — Quickly switch which entry is the active default.
+
+## Optional Feature
+Terms and conditions can be selectively included or excluded on individual invoices for flexibility across different transaction types or clients.
+
+## Alternate Terms
+Business Terms, Invoice Notes, Legal Notes, Payment Terms, Conditions of Sale, Footer Notes
+
+## FAQs
+
+**Q: How to add Terms and Conditions to invoices in SIM?**
+A: Go to Settings → Terms & Conditions → Add New → enter the terms text → optionally set as default → Save. When creating an invoice, the default terms apply automatically.
+
+**Q: How to set a default Terms and Conditions entry?**
+A: Go to Settings → Terms & Conditions → tap the entry → tap Make Default. The selected entry will apply to all new documents automatically.
+
+**Q: Can I have different Terms and Conditions for different invoices?**
+A: Yes. While creating an invoice, you can manually select any saved terms entry or disable terms for that specific invoice.
+
+**Q: Is there a dark mode in the SIM app?**
+A: This feature is currently not available. However, we may introduce it in the future. I’ll pass your request along to our development team. Stay tuned for updates!
+
+---
+
+# Help Videos
+
+## Definition
+Help Videos is an in-app learning section providing short tutorial videos organized by feature category. It allows users to visually learn how to use any part of the app without needing external documentation or support.
+
+## When & Who
+Used during onboarding, when a user is stuck on a feature, when exploring advanced functionality such as Sub User Management, POS, or GST compliance, or when support teams are guiding customers.
+
+## Navigation Path
+Side Menu → Help Videos → Browse by category → Select video → Watch in-app
+
+## Alternate Terms
+Help Centre Videos, Tutorial Videos, Training Videos, How-to Guides, Learning Hub, Video Support
+
+## FAQs
+
+**Q: Where are the tutorial videos in SIM?**
+A: Go to Side Menu → Help Videos. Videos are organized by feature category. Select any video to watch it in-app.
+
+**Q: What topics are covered in Help Videos?**
+A: Help Videos cover all major features of the app including Sub User Management, POS billing, GST compliance, invoicing, and more.
+
+---
+
+# Permanently Delete Account
+
+## Definition
+Permanently Delete Account allows users to completely and irrevocably remove their user account and all associated data from SIM.
+
+## Important Note-
+- If you do not want to delete your account but want to clear/reset your data, please contact support.
+- This feature is currently not available in the application.
+
+## Key Timelines
+
+- **Immediate Deactivation** — Upon initiation, the account is immediately deactivated and all data access stops.
+- **10-Day Cancellation Window** — Users have 10 days to cancel the deletion process. After this window, data cannot be restored by the support team.
+- **15-Day Permanent Deletion** — The account and all associated data are permanently deleted after 15 days.
+
+## When to Use
+A user should initiate account deletion only when they no longer wish to use the service and want all personal and business data removed. This action results in immediate loss of data access and cancellation of all active subscriptions without refunds.
+
+## Prerequisite
+Ensure all devices are using the latest version of the app before proceeding.
+
+## Navigation Path
+Settings → Permanently Delete Your Account → Read warnings → Confirm → Verify via email link
+
+## Deletion Workflow
+1. Navigate to Settings → Permanently Delete Your Account.
+2. Read the Please Note section covering deactivation, timelines, and subscription impacts.
+3. Click Permanently Delete Your Account → confirm by selecting Yes.
+4. A deletion link is sent to the registered email address.
+5. Open the email → click the Permanently Delete Account link.
+6. Enter email ID and password → provide consent and enter the verification code → click Delete Account.
+
+## Side Effects of Deletion
+
+- **Data Access** — Immediate deactivation. All access to invoices and records stops instantly.
+- **Subscriptions** — All active subscriptions are cancelled immediately with no refunds.
+- **Backup Files** — Existing backup files may become inoperable after account deletion.
+- **Account State** — The user is automatically logged out upon initiation.
+- **Restoration** — Data is not restorable by the support team after the 10-day cancellation window.
+
+## Optional Sub-Feature
+- **Cancellation of Deletion** — A 10-day window allows the user to reverse the deletion decision.
+
+## Alternate Terms
+Close Account, Remove Account, Terminate Account, Deactivate Account
+
+## FAQs
+
+**Q: How to permanently delete a SIM account?**
+A: Go to Settings → Permanently Delete Your Account → read the warnings → confirm → verify via the link sent to your registered email.
+
+**Q: Can I recover my data after deleting my account?**
+A: Within 10 days of initiating deletion, the process can be cancelled and data is still accessible. After the 10-day window, data cannot be restored by the support team. The account is permanently deleted after 15 days.
+
+**Q: What happens to my subscription when I delete my account?**
+A: All active subscriptions are cancelled immediately with no refunds upon initiating account deletion.
+
+**Q: How long before my account is fully deleted?**
+A: The account is deactivated immediately. Permanent deletion occurs after 15 days. Users have a 10-day window to cancel the deletion.
+
+**Q: What happens to my data if I delete my account?**
+A: All data access stops immediately. Backup files may become inoperable. Data is permanently removed after 15 days and cannot be restored after the 10-day cancellation window.
+
+**Q: How can I do app logout?**
+A: Tap on the **Profile section** in the top-right corner and then tap on Logout. Note: This feature is only available on the Website and Desktop Application.
+
+---
+
+# Tax Settings
+
+## Definition
+Tax Settings is where the business defines all taxes that appear on invoices, estimates, and purchase records. Each tax is created as a named entry with its own rates, application scope, and type. Once created, taxes can be selected when creating invoices or set to apply automatically.
+
+SIM comes with pre-built Indian GST taxes — SGST, CGST, and IGST — already configured with standard slab rates. Businesses can add custom taxes (e.g., VAT for international use, TDS/withholding tax, or any local tax).
+
+## When & Who
+Relevant for any business that applies tax on sales or purchases. Should be configured during initial setup before creating the first invoice.
+
+## Navigation Path
+Settings → Discount & Tax Settings → Add New Tax (+)
+*(Search: "Tax Settings" or "Discount Tax" in Settings search bar)*
+
+## Tax Type — Exclusive vs. Inclusive
+
+- **Exclusive** — Tax is calculated on top of the product price. The displayed price does not include tax. Example: Product price ₹100 + 18% tax = Invoice total ₹118. Used by most B2B businesses.
+- **Inclusive** — Tax is already embedded within the product price. Example: Product price ₹118 includes 18% tax. Net value = ₹100, tax = ₹18. Used in retail/B2C where a fixed MRP is displayed.
+
+## Tax Application Scope
+
+- **On Overall Invoice** — The tax percentage is applied to the total value of all items combined at the end of the invoice.
+- **On Item** — The tax percentage is applied to each line item individually. Allows different items in the same invoice to have different tax rates.
+
+## Tax Rates — Multiple Slabs Under One Tax Name
+A single tax entry can hold multiple percentage rates. For example, SGST holds 2.5%, 6%, 9%, and 14% under one name. When adding a tax to an invoice, the user selects the applicable rate. The Default rate is pre-selected automatically.
+
+## Pre-configured Indian GST Taxes
+
+- **SGST** (State GST) — Type: Exclusive. Standard rates: 2.5%, 6%, 9%, 14%. Applied on intra-state transactions (seller and buyer in the same state).
+- **CGST** (Central GST) — Type: Exclusive. Standard rates: 2.5%, 6%, 9%, 14%. Applied on intra-state transactions alongside SGST.
+- **IGST** (Integrated GST) — Type: Exclusive. Standard rates: 5%, 12%, 18%, 28%. Applied on inter-state transactions (seller and buyer in different states).
+
+## Key Concepts
+
+- **Auto Apply** — When enabled on a tax, it is automatically added to every new invoice. Can be removed manually on a per-invoice basis.
+- **Withholding Tax / TDS (Tax Deducted at Source)** — The buyer deducts a percentage of payment before paying the seller and deposits it directly with the government. Common in India for professional services, rent, and contract payments. In SIM, enabled via the Deducted / Withholding Tax toggle — the tax amount is subtracted from the invoice total rather than added.
+- **Discount Setting (on the same screen)** — Controls how discounts are applied across all transactions (Invoice, Purchase, Estimate, Sale Order, Purchase Order). Options: Per Item (discount applied to each line item individually) or Overall (discount applied to the total invoice amount). This is a global setting that affects all forms.
+
+## Alternate Terms
+Tax is also called: GST, VAT, TDS, Service Tax, Tax Rate, Tax Slab
+
+## FAQs
+
+**Q: How to add a new tax in SIM?**
+A: Go to Settings → Discount & Tax Settings → tap Add New Tax (+) → enter the tax name, type, application scope, and rates → Save.
+
+**Q: What is the difference between Exclusive and Inclusive tax?**
+A: Exclusive tax is added on top of the product price (e.g., ₹100 + 18% tax = ₹118). Inclusive tax is already included within the displayed price (e.g., ₹118 includes 18% tax, so net = ₹100).
+
+**Q: What is Auto Apply for a tax?**
+A: When Auto Apply is enabled on a tax, it is automatically added to every new invoice created. It can still be removed manually from any individual invoice.
+
+**Q: What is SGST, CGST, and IGST?**
+A: SGST (State GST) and CGST (Central GST) are applied together on intra-state transactions (buyer and seller in the same state). IGST (Integrated GST) is applied on inter-state transactions (buyer and seller in different states).
+
+**Q: What is Withholding Tax / TDS in SIM?**
+A: Withholding Tax (TDS) is a tax where the buyer deducts a percentage from the payment before paying the seller and deposits it with the government. In SIM, enable the Deducted / Withholding Tax toggle on a tax entry — the amount is subtracted from the invoice total rather than added.
+
+**Q: What does the Discount Setting on the Tax screen control?**
+A: It controls whether discounts are applied Per Item (to each line item individually) or Overall (to the total invoice amount). This is a global setting affecting all invoices, purchases, estimates, and orders.
+
+**Q: Can one tax have multiple percentage rates?**
+A: Yes. A single tax entry can hold multiple rate slabs. For example, SGST has 2.5%, 6%, 9%, and 14% under one name. You select the applicable rate when adding the tax to an invoice.
+
+---
+
+# Primary Settings Guide
+
+This guide outlines the core primary settings within the application, detailing their purpose and the steps to configure them.
+
+## 1. Enable PIN Protection / Fingerprint
+
+**Purpose**: This security feature restricts unauthorized access to the app by requiring a Personal Identification Number (PIN) or biometric authentication (fingerprint).
+
+- **Enable Fingerprint:** You can use biometric PIN protection.
+ Go to Settings → Primary Settings → Enable PIN Protection /Fingerprint → Check into the Enable Fingerprint checkbox 
+
+ - **Manual PIN:** 
+    - **To Enable PIN:** You can set PIN with 3 to 6 digits.
+    Go to Settings → Primary Settings → Enable PIN Protection /Fingerprint → Check into the  Manual PIN (Enter the PIN, confirm it,add hint in case you forget pin)→ Tap on Save
+
+    - **To Disable PIN:** Go to Settings → Primary Settings → Disable PIN Protection → Enter your previous PIN. The PIN will be successfully Disabled from the app
+
+    - **To Forget PIN:** Tap on forget pin on ‘Enter Your Pin’ Screen → You will receive an email on your registered email id with the PIN.
+
+
+## 2. Manage Transaction Number
+
+**Purpose**: This setting controls how invoice or transaction numbers are generated, allowing for automatic or manual numbering, custom prefixes, and sequence management.
+
+**Flow**:
+Settings → Primary Setting → Manage Transaction Number → Set numbering format → Define prefix/start number → Save
+
+## 3. Country
+
+**Purpose**: This setting defines the country to apply region-specific configurations such as tax rules, currency, and date/number formats.
+
+**Flow**:
+Settings → Primary Setting → Select Country → Save
+
+## 4. Financial Year Range
+
+**Purpose**: This setting defines the accounting period for your business (e.g., April–March in India).
+
+**Flow**:
+Settings → Primary Setting → Financial Year Range → Select Financial Year Range → Save
+
+## 5. Currency Format
+
+**Purpose**: This setting determines how monetary values are displayed within the application, including the currency symbol, decimal places, and placement.
+
+**Flow**
+Settings → Primary Setting → Currency format → Select symbol of your country currency or text equivalent → Save
+
+## 6. Number Format
+
+**Purpose**: This setting controls how numbers are displayed throughout the application (e.g., 1,00,000 vs. 100,000).
+
+**Flow**:
+Settings → Primary Setting → Number Format → Select format → Save
+
+## 7. Date Format
+
+**Purpose**: This setting defines how dates appear in invoices, reports, and other documents within the application.
+
+**Flow**:
+Settings → Primary Setting → Date Format → Choose format → Save
+
+## 8. Reminder for Overdue
+
+**Purpose**: This feature automatically reminds customers about unpaid or overdue invoices through notifications, SMS, or email.
+
+**Flow**:
+Set the overdue date from invoice. Please go to the "Invoice >> Create New >> Click on Date (at top) >> Due Date.
+Also, you can set the overdue time period from the settings -
+Settings → Reminder for overdue → Set reminder rules (Daily/Weekly) Set time and day- Save.
+
+---
+
+# Subscription
+
+# App Subscription / Upgrade
+
+## Definition
+An App Subscription is a paid plan that grants users access to premium features of SIM for a specified duration — monthly or yearly. It controls which features are accessible and operates on a time-based validity model.
+
+The app offers a 1-month free trial. After the trial, a subscription must be purchased to continue using the app.
+
+## Navigation Path
+Side Menu → Upgrade → Purchase Subscription / Purchase History / Purchase Additional Organization
+
+## Subscription Plans
+
+- **Monthly Package** — Auto-renews every month unless cancelled.
+- **Annual Package** — Auto-renews every year unless cancelled.
+- **1-Year Access (No Auto-Renew)** — Access for 1 year. Must be manually renewed after expiry. Does not auto-renew.
+
+## Payment Gateways
+
+- **International users** — PayPal, Stripe.
+- **Indian users** — Razorpay, QR scanner.
+
+Note on pricing: The amount shown on the Google Play Store subscription page may vary by country due to local taxes and currency conversion. The amount shown on direct payment links is fixed globally for all users.
+
+## Subscription Lifecycle
+
+1. **Trial Activation**
+   - A 1-month free trial begins immediately upon app installation, regardless of whether the app is actively used.
+   - During the trial, all data is stored locally on the device only. No data is stored on the app servers.
+   - If the app is uninstalled during the trial, all data is permanently lost and cannot be recovered.
+
+2. **Plan Selection**
+   - Select Monthly, Annual, or 1-Year No Auto-Renew.
+
+3. **Payment**
+   - Payment is processed via Google Play Store, Razorpay, Stripe, or PayPal.
+
+4. **Registration**
+   - Users must register with an email ID and password to activate subscription benefits.
+   - Registration is not possible without an active subscription.
+
+5. **Activation**
+   - Premium features are unlocked instantly after successful purchase and registration.
+   - Access includes: web/desktop version at www.simpleinvoiceweb.com, multiple Android devices at no extra cost, sub-user management, online store, and manage images features.
+   - Other basic features remain the same between trial and paid versions.
+
+6. **Renewal / Expiry / Cancellation**
+   - Monthly and Annual plans auto-renew unless cancelled.
+   - Upon expiry, users cannot create new invoices or access previously created data. Viewing and editing are also restricted.
+   - To cancel auto-renewal: Google Play Store → Side Menu (profile icon) → Payment & Subscription → Subscription → Cancel.
+
+Flow summary: Install → Trial → Subscribe → Register → Use → Renew / Expire
+
+## Features Unlocked by Subscription
+
+These features are available only in the paid version (not in the trial):
+- Web / desktop version at www.simpleinvoiceweb.com
+- Multiple Android device access
+- Sub-user management
+- Online store
+- Manage images
+
+All other features are available in both the trial and paid versions.
+
+## Upgrade Menu Options
+
+**1. Purchase Subscription**
+Buy a monthly auto-renewal, yearly auto-renewal, or yearly non-auto-renewal plan to access premium features.
+
+**2. Purchase History**
+A record of all past and active subscriptions. View previous subscription payments and track the status of current or expired subscriptions.
+
+**3. Purchase Additional Organization**
+For users managing multiple separate businesses. Each new business requires a separate subscription. The new business will have a separate username and data.
+
+Navigation: Side Menu → Upgrade → scroll down → Purchase Subscription / Purchase History / Purchase Additional Organization
+
+## Key Concepts
+
+- **Free Trial** — A 1-month complimentary period. Trial starts on app installation, not on first use. Data during trial is stored on device only and is not recoverable if the app is uninstalled.
+- **Grace Period** — A short period after subscription expiry during which some functionality may still be available.
+- **Cloud Account Dependency** — Subscriptions are linked to a user's email address. A registered cloud account is required to activate subscription benefits and enable cross-device access.
+- **Payment Gateway Integration** — Google Play Store or direct payment providers (Razorpay, Stripe, PayPal) handle billing, renewals, and transaction processing.
+
+## Interaction with Other Features
+
+- **Data Access on Expiry** — Users cannot create new invoices or access existing data after subscription expiry. Viewing and editing are also restricted.
+- **Backup & Sync** — Premium users can take cloud backups (manual or scheduled) and sync across multiple devices or the web version. On expiry, sync may be disabled and existing data access may be restricted.
+- **Notifications & Reminders** — The app sends renewal reminders and expiry alerts before and after subscription expiry.
+
+## Practical Example
+
+1. A user creates 100 invoices during the 1-month free trial.
+2. The trial ends. The user can no longer create new invoices.
+3. The user purchases a monthly or yearly plan. Full access is restored instantly.
+4. After 1 month or 1 year, the subscription expires and invoice creation stops again.
+
+## Alternate Terms
+Subscription is also called: Premium Plan, Membership Plan, Paid Plan, SaaS Subscription, License Plan
+
+## FAQs
+
+**Q: How long is the free trial?**
+A: The free trial is 1 month. It starts immediately upon app installation, regardless of whether the app is actively used.
+
+**Q: What happens when the free trial ends?**
+A: After the trial ends, users cannot create new invoices until a subscription is purchased. Existing data may also become inaccessible.
+
+**Q: How to purchase a subscription in SIM?**
+A: Go to Side Menu → Upgrade → Purchase Subscription → select a plan (Monthly, Annual, or 1-Year No Auto-Renew) → proceed with payment.
+
+**Q: What plans are available for subscription?**
+A: Three plans are available — Monthly (auto-renews), Annual (auto-renews), and 1-Year No Auto-Renew (must be renewed manually after expiry).
+
+**Q: What features are unlocked after purchasing a subscription?**
+A: After purchasing and registering, users get access to: web/desktop version (www.simpleinvoiceweb.com), multiple Android devices, sub-user management, online store, and manage images. All other features work the same in trial and paid versions.
+
+**Q: Do I need to register after purchasing a subscription?**
+A: Yes. Users must register with an email ID and password to activate subscription benefits. Registration is not possible without an active subscription.
+
+**Q: What payment methods are accepted?**
+A: For international users: PayPal and Stripe. For Indian users: Razorpay and QR scanner. Payments can also be made via Google Play Store.
+
+**Q: Why is the subscription price different on Google Play Store vs. the payment link?**
+A: The Google Play Store price may vary by country due to local taxes and currency conversion. The price on direct payment links is fixed globally.
+
+**Q: How to cancel auto-renewal of a subscription?**
+A: Go to Google Play Store → open Side Menu (profile icon) → Payment & Subscription → Subscription → Cancel.
+
+**Q: What happens when the subscription expires?**
+A: On expiry, users cannot create new invoices or access previously created data. Viewing and editing are also restricted. Data may still be stored but access is blocked until the subscription is renewed.
+
+**Q: Is my data safe during the free trial if I uninstall the app?**
+A: No. During the trial, all data is stored locally on the device only — not on the app servers. Uninstalling the app will permanently delete all data with no possibility of recovery.
+
+**Q: Can I use SIM on multiple devices with one subscription?**
+A: Yes. After purchasing a subscription and registering a cloud account, you can use the app on multiple Android devices and the web version (www.simpleinvoiceweb.com) at no extra cost.
+
+**Q: What is Purchase Additional Organization?**
+A: This option allows managing multiple separate businesses under different accounts. Each new business requires its own subscription and will have a separate username and data.
+
+**Q: How to purchase an additional organization account?**
+A: Go to Side Menu → Upgrade → scroll down → Purchase Additional Organization.
+
+**Q: Where can I view my subscription history?**
+A: Go to Side Menu → Upgrade → Purchase History. This shows all past and active subscriptions with payment details and status.
+
+**Q: What is the grace period after subscription expiry?**
+A: A grace period is a short duration after expiry during which some functionality may still be available before full restrictions are applied.
+
+**Q: Can I use the web version of SIM without a subscription?**
+A: No. Web/desktop access at www.simpleinvoiceweb.com is a premium feature available only after purchasing a subscription and registering a cloud account.
+
+**Q: How to renew subscription?**
+A: Go to the Side Menu (from the top left corner of the main screen) >> Upgrade >> Purchase Subscription.
+
+**Q: What is Customer Care Number?**
+A: Contact WhatsApp support at 📞 9511884141.
+
+**Q: I want to Pay/Payment?**
+A: Go to Side Menu → Upgrade → Purchase Subscription → select a plan (Monthly, Annual, or 1-Year No Auto-Renew) → proceed with payment.
